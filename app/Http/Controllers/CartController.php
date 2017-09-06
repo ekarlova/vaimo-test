@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use Cache;
+
 class CartController extends Controller
 {
     public function get()
     {
-        $data = [
+        $cart = [
             'totalItems' => rand(1,20),
             'totalPrice' => $this->formatPrice(rand(300, 1000)),
             'items' => [
@@ -24,6 +26,10 @@ class CartController extends Controller
                 ]
             ]
         ];
+
+        $data = Cache::remember('cart',1, function() use ($cart) {
+            return $cart;
+        });
 
         return response()->json($data);
     }

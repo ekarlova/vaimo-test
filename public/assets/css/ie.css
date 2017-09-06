@@ -1,0 +1,10 @@
+.cart-items li {
+  display: block;
+}
+.cart-items li img {
+    float: left;
+    margin-right: 30px;
+}
+.cart-items li .name {
+  float: left;
+}

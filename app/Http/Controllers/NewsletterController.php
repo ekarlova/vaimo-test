@@ -3,15 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Validator;
 
 class NewsletterController extends Controller
 {
     public function subscribe(Request $request)
     {
-        $email = $request->input('email');
+        $this->validate($request, [
+            'email' => 'required|email|max:255',
 
-        // @todo Complete functionality
-
-        return response()->json([]);
+        ]);
     }
 }
