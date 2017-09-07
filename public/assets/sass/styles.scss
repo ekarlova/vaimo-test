@@ -266,7 +266,7 @@ body {
         }
       }
     }
-    &:hover {
+    &.not-empty:hover {
       .cart-items {
         display: block;
       }

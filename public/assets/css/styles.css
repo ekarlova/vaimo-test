@@ -482,7 +482,7 @@ body {
           background: url(../img/delete.png) no-repeat 0 0;
           width: 17px;
           height: 17px; }
-    #page-header #cart:hover .cart-items {
+    #page-header #cart.not-empty:hover .cart-items {
       display: block; }
 
 .about {

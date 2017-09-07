@@ -9,8 +9,9 @@
     dataType: 'json',
     success: function (response) {
       var cart = $('#cart');
+      cart.addClass('not-empty');
       $('.amount', cart).html(response.totalItems);
-      $('.sum', cart).append(response.totalPrice);
+      $('.sum', cart).append('&euro;' + response.totalPrice);
       $.each(response.items, function( key, value ) {
         $('.cart-items ul', cart).prepend(
           '<li>'+

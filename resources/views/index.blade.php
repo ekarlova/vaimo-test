@@ -18,9 +18,9 @@
         <h1 class="logo"><a href="{{ url('/') }}" title="Vaimo Store"></a></h1>
         <div id="cart">
            <div class="cart-button">
-               <span class="amount"></span>
+               <span class="amount">0</span>
                items in your cart
-               <strong class="sum">&euro;</strong>
+               <strong class="sum"></strong>
            </div>
             <div class="cart-items">
                 <ul></ul>
@@ -81,7 +81,7 @@
         <section class="about">
             <div class="about-image">
                 <h5>Get ready for the autumn <span>we have prepared everything for you!</span></h5>
-                <img src="assets/img/ad.jpg" alt="">
+                <img src="assets/img/about.jpg" alt="">
             </div>
             <div class="about-text">
                 <h2>This is Vaimo Store </h2>
